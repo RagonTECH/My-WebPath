@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Rago Form</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <h1 id="title">freeCodeCamp Form</h1>
+        <p id="description">Please fill in so we can improve user experience.</p>
+        <form id="survey-form">
+            <fieldset>
+                <label id="name-label"> Name: 
+                    <input id="name" type="text" placeholder="Please enter your name" required/>
+                </label>
+                <label id="email-label"> Email:
+                    <input id="email" type="email" placeholder="Please enter your email" required/>
+                </label>
+                <label id="number-label"> Age:
+                    <input id="number" type="number" min="13" max="120" placeholder="Please enter your age" required/>
+                </label>
+            </fieldset>
+                <label> Please select your role:
+                <select id="dropdown" required>
+                    <option disabled selected value="">(select one)</option> 
+                    <option value="1">Student</option>
+                    <option value="2">Full-time worker</option>
+                    <option value="3">Part-time worker</option>
+                    <option value="4">Other</option>
+                </select>
+                </label>
+                <legend>Would you recommend FreeCodeCamp to a friend?</legend>
+                <label for="Never">
+                    <input class="den" name="favorite" type="radio" value="Never" required/>Never
+                </label>
+                <label for="Maybe">
+                    <input class="den" name="favorite" type="radio" value="Maybe" required/>Maybe
+                </label>
+                <label for="Absolutely">
+                    <input class="den"  name="favorite" type="radio" value="Absolutely" required />Absolutely
+                </label>
+                <fieldset>
+                    <label> What is your favorite feature of freeCodeCamp?
+                        <select id="dropdown" required>
+                            <option disabled selected value="">(select one)</option>
+                            <option value="1">Challenges</option>
+                            <option value="2">Projects</option>
+                            <option value="3">Community</option>
+                            <option value="4">Open Source</option>
+                        </select>
+                    </label>
+                </fieldset>
+            <fieldset>
+                <legend>What would you like to see improved?</legend>
+                <label>
+                    <input class="den" value="1" name="chose" type="checkbox"/> Fornt-end Projects
+                </label>
+                <label>
+                    <input class="den" value="2" name="chose" type="checkbox"/> Back-end Projects
+                </label>
+                <label>
+                    <input class="den" value="3" name="chose" type="checkbox"/> Data Visualization
+                </label>
+                <label>
+                    <input class="den" value="4" name="chose" type="checkbox"/> Challenges
+                </label>
+                <label>
+                    <input class="den" value="5" name="chose" type="checkbox"/> Open Source Community
+                </label>
+                <label>
+                    <input class="den" value="6" name="chose" type="checkbox"/> Videos
+                </label>
+                <label>
+                    <input class="den" value="7" name="chose" type="checkbox"/> City Meetups
+                </label>
+                <label>
+                    <input class="den" value="8" name="chose" type="checkbox"/> Wiki
+                </label>
+                <label>
+                    <input class="den" value="9" name="chose" type="checkbox"/> Forum
+                </label>
+                <label>
+                    <input class="den" value="10" name="chose" type="checkbox"/> Additional Courses
+                </label>
+            </fieldset>
+            <legend>Please give your opinion</legend>
+            <label for="message">
+                <textarea id="message" name="message" rows="3" cols="65" placeholder="new message"> </textarea>
+            </label>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </body>
+</html>

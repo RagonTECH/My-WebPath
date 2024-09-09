@@ -1,0 +1,65 @@
+body{
+    background-color: rebeccapurple;
+    font-family:Tahoma;
+    font-size: 20px;
+    height: 100vh;
+    background-size: cover;
+}
+
+h1,p,legend{
+    color: white;
+    text-align: center;
+}
+
+label{
+    color:white;
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid rebeccapurple;
+}
+
+.den {
+  width: unset; /* sola sabitlemek için kullandım */
+  margin: 0 0.5rem; /* radio düğmelerinin aralıklarını düzenlemek için */
+  vertical-align: middle; /* yazının radio düğmesiyle aynı hizada durması için */
+}
+
+textarea {
+  width: 100%;
+}
+
+legend {
+  width: unset;
+}
+
+button {
+  display: block;
+  width: 100%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: yellowgreen;
+  border-color: white;
+  min-width: 300px;
+}
+                   
